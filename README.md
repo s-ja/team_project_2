@@ -15,3 +15,9 @@
 - 사용성 테스트
 - 수정보완
 - 최종완료
+
+# Earphone Shop - Always with you
+- 메인 컬러 테마 (black,white,neon lime(?))
+- 로고/심볼 리디자인
+- 메인페이지(index) / 제품리스트 / 제품페이지 / 로그인 / 회원가입
+- 
