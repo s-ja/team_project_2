@@ -1,0 +1,9 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'd2c_coding_regular';
+    src: url(../font/D2Coding/D2Coding-Ver1.3.2-20180524.ttf);
+}
+@font-face {
+    font-family: 'd2c_coding_bold';
+    src: url(../font/D2Coding/D2CodingBold-Ver1.3.2-20180524.ttf);
+}
