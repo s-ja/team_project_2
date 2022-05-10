@@ -1,11 +1,14 @@
 @charset "utf-8";
-@font-face {
+
+/* @font-face {
     font-family: 'd2coding_regular';
     src: url(../font/D2Coding/D2Coding-Ver1.3.2-20180524.ttf) format("truetype");
-}
+} */
 @font-face {
-    font-family: 'd2coding-bold';
-    src: url(../font/D2Coding/D2CodingBold-Ver1.3.2-20180524.ttf) format("truetype");
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 a,a:link{
@@ -15,7 +18,7 @@ a,a:link{
 
 body{
     font : 16px/1.5;
-    font-family: 'd2coding_regular';
+    font-family: 'D2Coding';
     background: #161B26;
     color: aliceblue;
     box-sizing: border-box;
@@ -33,7 +36,7 @@ body{
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    /* font-weight: 900; */
+    font-weight: 600;
     margin: 20px 0 0 0;
     /* padding: 20px 0 92px 0; */
 }
@@ -45,7 +48,9 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    align-items: center;
+    height: 40px;
+    margin: 0 0 20px 0;
     /* margin: 50px; */
 }
 .nav > li > ul{
@@ -67,8 +72,9 @@ body{
     height: 30px;
     font-size: 1.25rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     color: slategray;
+    text-indent: 100px;
 }
 .search>input:focus{
     outline: none;
@@ -103,7 +109,7 @@ body{
 .list_title{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 20px 0;
 }
 .main_list{
@@ -130,10 +136,127 @@ body{
 }
 .badge{
     display: flex;
-    column-gap: 10px;
+    column-gap: 5px;
 }
 .price{
     font-weight: 500;
     font-size: 1.5rem;
     text-align: right;
+}
+.board{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.board_title{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-bottom: 1px solid #E73F71;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 30%;
+}
+.board > ul{
+    text-align: left;
+    list-style: disc inside;
+}
+.board > ul > li{
+    margin: 10px 0;
+    font-size: .8em;
+}
+.subscription{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #E73F71;
+    padding: 0 40px;
+    border-radius: 30px;
+}
+.subscription_title{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 20px 0;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+}
+.subscription input{
+    width: 100%;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: aliceblue;
+    margin: 3px 0;
+    padding: 8px 0;
+}
+.subscription input::placeholder{
+    color: #E73F71;
+    font-weight: 600;
+}
+.subscription input:focus{
+    outline: none;
+}
+.subscription button{
+    background: #E73F71;
+    color: #161B26;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: .825em;
+    margin: 50px 0 20px 0;
+}
+.footer_nav li{
+    padding-right: 30px;
+    border-right: 1px solid white;
+}
+.footer_nav li:nth-last-child(1){
+    border: 0;
+}
+.footer_logo{
+    width: 40%;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+}
+.footer_logo img{
+    max-width: 100%;
+}
+.cs{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 8px;
+    margin: 10px auto 30px auto;
+}
+.phone{
+    /* font-weight: 900; */
+    font-size: 2em;
+    border-bottom: 1px solid;
+    width: 20%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.cs ul li{
+    font-size: .825em;
+    margin: 5px 0;
+    font-weight: 600;
+}
+.info{
+    font-size: .825em;
+    text-align: center;
+    margin: 30px 0;
+    color: slategray;
 }
