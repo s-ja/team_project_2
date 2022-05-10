@@ -10,7 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 a,a:link{
     color: inherit;
     text-decoration: none;
@@ -252,7 +251,7 @@ body{
 .cs ul li{
     font-size: .825em;
     margin: 5px 0;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .info{
     font-size: .825em;
