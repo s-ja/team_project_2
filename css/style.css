@@ -259,3 +259,13 @@ body{
     margin: 30px 0;
     color: slategray;
 }
+
+/* shop start */
+.shop_wrap{
+    display: flex;
+}
+.organizer{
+    display: flex;
+    justify-content: flex-end;
+}
+/* shop end */
